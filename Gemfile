@@ -10,7 +10,8 @@ gem 'sqlite3'
 gem 'execjs'
 gem 'therubyracer'
 gem 'devise'
-
+gem 'omniauth-facebook'
+gem 'mysql2', '>0.3'
 
 
 
