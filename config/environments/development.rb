@@ -1,10 +1,12 @@
-Gypsy::Application.configure do
+  Gypsy::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
+  ENV['FACEBOOK_APP_ID'] = "337649212988609"
+  ENV['FACEBOOK_SECRET'] = "8d1c88fa875d08d8ef9639b68a7814f9"
 
   # Log error messages when you accidentally call methods on nil.
   config.whiny_nils = true

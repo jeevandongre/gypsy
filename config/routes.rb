@@ -1,6 +1,11 @@
 Gypsy::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  match 'auth/:provider/callback', to: 'sessions#create'
+match 'auth/failure', to: redirect('/')
+match 'signout', to: 'sessions#destroy', as: 'signout'  
+match 'application/application' ,to: 'application#application', as: 'application'
+
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
