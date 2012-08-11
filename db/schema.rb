@@ -11,6 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20120811175346) do
 
   create_table "users", :force => true do |t|
@@ -23,6 +24,22 @@ ActiveRecord::Schema.define(:version => 20120811175346) do
     t.string   "string"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+=======
+ActiveRecord::Schema.define(:version => 20120811123630) do
+
+  create_table "blr_places", :force => true do |t|
+    t.string   "place_name"
+    t.string   "tags"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "places", :force => true do |t|
+    t.string   "place_name"
+    t.string   "tags"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+>>>>>>> 1559db632d2a86ba6d7f9023c3c79eb30e762cb0
   end
 
 end

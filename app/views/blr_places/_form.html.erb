@@ -1,0 +1,25 @@
+<%= form_for(@blr_place) do |f| %>
+  <% if @blr_place.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@blr_place.errors.count, "error") %> prohibited this blr_place from being saved:</h2>
+
+      <ul>
+      <% @blr_place.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :place_name %><br />
+    <%= f.text_field :place_name %>
+  </div>
+  <div class="field">
+    <%= f.label :tags %><br />
+    <%= f.text_field :tags %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

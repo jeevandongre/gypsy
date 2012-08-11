@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Place name:</b>
+  <%= @blr_place.place_name %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= @blr_place.tags %>
+</p>
+
+
+<%= link_to 'Edit', edit_blr_place_path(@blr_place) %> |
+<%= link_to 'Back', blr_places_path %>

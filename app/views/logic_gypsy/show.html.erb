@@ -1,0 +1,6 @@
+<h1>Results</h1>
+suggestions : <% @results.each do |r| %>
+	           <% r.each do |rr|  %>
+	           <%= rr.place_name %>
+	           <% end %>
+	           <% end %>

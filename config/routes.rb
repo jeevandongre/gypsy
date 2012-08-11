@@ -1,4 +1,14 @@
 Gypsy::Application.routes.draw do
+  get "logic_gypsy/index"
+
+  get "logic_gypsy/show"
+
+  resources :blr_places
+
+  resources :places
+  match '/home' => 'logic_gypsy#index' , :as => :home
+  match '/show'  => 'logic_gypsy#show' , :as => :show
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
   match 'auth/:provider/callback', to: 'sessions#create'
