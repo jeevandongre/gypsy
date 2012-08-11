@@ -10,8 +10,7 @@ gem 'sqlite3'
 gem 'execjs'
 gem 'therubyracer'
 gem 'devise'
-
-
+gem 'mysql2', '> 0.3'
 
 
 # Gems used only for assets and not required

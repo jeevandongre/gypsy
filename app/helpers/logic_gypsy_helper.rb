@@ -1,0 +1,2 @@
+module LogicGypsyHelper
+end

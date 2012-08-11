@@ -1,0 +1,6 @@
+<h1>Welcome</h1>
+<%= form_tag('/show', :method=>'post', :multipart => true) do %>
+From: <%= text_field_tag "txt_from"%> </br>
+Age: <%= text_field_tag "txt_age"%> </br>
+<%= submit_tag 'find' %>
+<% end %>
